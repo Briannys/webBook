@@ -33,6 +33,7 @@
             </li>
             <li><a href="">Edicion</a>
                 <ul>
+                    <li><a href="mostrarTablaEdiciones.html">Crear Edicion</a></li>
                     <li><a href="crearEdicion.html">Crear Edicion</a></li>
                     <li><a href="modificarEdicion.html">Modificar Edicion</a></li>
                     <li><a href="eliminarEdicion.html">Eliminar Edicion</a></li>
@@ -65,7 +66,19 @@
 
             <input type="submit" value="Enviar" onclick="" class="submit">
         </form>
-       
+    </div>
+    <div id="table-container">
+        <table class="table table-primary table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Libro</th>
+                    <th>Descripcion</th>
+                    <th>Año de lanzamiento</th>
+                </tr>
+            </thead>
+            <tbody id="res"></tbody>
+        </table>
     </div>
 </body>
 </html>

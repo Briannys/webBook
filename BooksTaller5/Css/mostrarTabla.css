@@ -52,59 +52,60 @@ ul, ol {
     top:0px;
 }
 
-.container .form .form-header .form-title {
-    font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-    text-align: center;
-}
 
-.container .form {
-    background: rgba(255, 255, 255, 0.932);
-    width: 90%;
-    max-width: 750px;
-    margin: auto;
-    padding: 5px 35px;
-    margin-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 7px;
-}
-
-.container .form .form-label {
+.item-r {
+    float: right;
+    margin: 0;
     display: block;
-    font-size: 16px;
-    color: black;
+    background-color:black;
+}
+.container {
+    width: 80%;
+    background-color:#cfe2ff;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #312929;
+}
+.title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
+    font-size: 35px;
+    text-shadow: 0.1em 0.1em 0.2em lightslategray;
 }
 
-.container .form .form-input,
-.form-selec,
-.form-select .form-option {
+.label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 1cm;
+    margin-bottom: 1cm;
+}
+
+.form-selec, .form-input
+.form-option {
+    margin-top: 20px;
     background: rgba(0, 0, 0, .1);
     border: none;
     outline: none;
     border-bottom: 2px solid;
-    width: 100%;
     padding: 12px;
+    padding-right: 120px;
     margin-bottom: 20px;
-    border-radius: 2px;
+    border-radius: 100px;
     font-size: 14px;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.container .form .submit {
+.submit {
     border-radius: 8px;
-    background-color: #917373;
+    background-color: #555555;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13.5px;
     margin: auto;
 }
+
 #table-container {
     width: 80%;
     justify-content: center;
@@ -128,6 +129,3 @@ thead {
     color: black;
     border-radius: 8px;
 }
-
- 
- 
