@@ -48,25 +48,50 @@
             </li>
         </ul>
     </div>
-    <div class="container">
-        <form action="" class="form">
-            <div class="form-header">
-                <h1 class="form-title">Modificar Edicion</h1>
-            </div>
 
-            <label for="selectLibro" class="form-label">Selecciona libro a modificar <select name="selectLibro" id="selectLibro" class="form-selec" required>
-                <option class="form-option"></option>
-            </select></label>
+    <div class="container-Button">
+        <button class="open-button" onclick="openForm()">Open Form</button>
 
-            <label for="description" class="form-label">Ingresa la nueva descripcion de la edicion: </label>
-            <input type="text" name="description" id="description" class="form-input" placeholder="Descripcion de la edicion" required>
+<div class="form-popup" id="myForm">
+  <form action="" class="form-container">
+    <h1>Login</h1>
 
-            <label for="lastName" class="form-label">Ingresa el nuevo Año de lanzamiento de la edicion: </label>
-            <input type="number" name="lastName" id="lastName" class="form-input" placeholder="Año de lanzamiento de la edicion" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
 
-            <input type="submit" value="Enviar" onclick="" class="submit">
-        </form>
-       
+    <label for="psw"><b>ID Edicion: </b></label>
+
+    <label for="date"><b>Selecciona la fecha en la que estas rentando la edicion: </b></label>
+    <input type ="date" id="date" name="date">
+
+    <button type="submit" class="btn">Login</button>
+    
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+    </div>
+    <div id="table-container">
+        <table class="table table-primary table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Ciudad donde reside</th>
+                </tr>
+            </thead>
+            <tbody id="res"></tbody>
+        </table>
     </div>
 </body>
 </html>
