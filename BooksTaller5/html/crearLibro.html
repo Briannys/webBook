@@ -26,6 +26,7 @@
             </li>
             <li><a href="">Libro</a>
                 <ul>
+                    <li><a href="mostrarTablas.html">Lista de Libros</a></li>
                     <li><a href="crearLibro.html">Crear Libro</a></li>
                     <li><a href="modificarLibro.html">Modificar Libro</a></li>
                     <li><a href="eliminarLibro.html">Eliminar Libro</a></li>
@@ -33,6 +34,7 @@
             </li>
             <li><a href="">Edicion</a>
                 <ul>
+                    <li><a href="mostrarTablas.html">Lista de Ediciones</a></li>
                     <li><a href="crearEdicion.html">Crear Edicion</a></li>
                     <li><a href="modificarEdicion.html">Modificar Edicion</a></li>
                     <li><a href="eliminarEdicion.html">Eliminar Edicion</a></li>
@@ -40,6 +42,7 @@
             </li>
             <li><a href="">Libreria</a>
                 <ul>
+                    <li><a href="mostrarTablas.html">Lista de Librerias</a></li>
                     <li><a href="crearLibreria.html">Crear Libreria</a></li>
                     <li><a href="modificarLibreria.html">Modificar Libreria</a></li>
                     <li><a href="eliminarLibreria.html">Eliminar Libreria</a></li>
@@ -93,10 +96,22 @@
             </select></label>
 
               <input type="submit" value="Enviar" onclick="" class="submit">
-
-           
         </form>
-       
+    </div>
+    <div id="table-container">
+        <table class="table table-primary table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Titulo</th>
+                    <th>ISBN</th>
+                    <th>Genero</th>
+                    <th>Libreria</th>
+                    <th>Libro</th>
+                </tr>
+            </thead>
+            <tbody id="res"></tbody>
+        </table>
     </div>
 </body>
 </html>

@@ -8,10 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Css/crearAuthor.css">
+    <link rel="stylesheet" href="../Css/mostrarTabla.css">
     <title>Libreria 4 patas</title>
 </head>
-
 <body>
     <div id="header">
         <ul class="nav">
@@ -50,35 +49,28 @@
     </div>
     <div class="container">
         <form action="" class="form">
-            <div class="form-header">
-                <h1 class="form-title">Crear Author</h1>
-            </div>
-            
-            <label for="author" class="form-label">Ingrese nombre del Author: </label>
-            <input type="text" name="author" id="author" class="form-input" placeholder="Ingrese nombre del author" required>
-
-            <label for="lastName" class="form-label">Ingrese apellido del Author: </label>
-            <input type="text" name="lastName" id="lastName" class="form-input" placeholder="Ingrese apellido del author" required>
-
-            <label for="country" class="form-label">Ingrese la ciudad donde reside: </label>
-            <input type="text" name="country" id="country" class="form-input" placeholder="Ingrese la ciudad donde reside" required>
-
+            <h1 class="title">Listado de Ediciones segun un libro:</h1>
+            <label for="filtrar" class="label"></label>
+            <label for="selectLibro" class="form-label">Selecciona libro<select name="selectLibro" id="selectLibro" class="form-selec" required>
+                <option class="form-option"></option>
+                <option class="form-option">ejemplo</option>
+            </select></label>
             <input type="submit" value="Enviar" onclick="" class="submit">
-        </form>
-       
+    </form>
+    
     </div>
     <div id="table-container">
         <table class="table table-primary table-striped">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Ciudad donde reside</th>
+                    <th>Descripcion</th>
+                    <th>Año de Lanzamiento</th>
                 </tr>
             </thead>
             <tbody id="res"></tbody>
         </table>
     </div>
+    
 </body>
 </html>
